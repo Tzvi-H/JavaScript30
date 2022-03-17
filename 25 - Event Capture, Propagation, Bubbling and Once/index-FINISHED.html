@@ -46,7 +46,9 @@
   const button = document.querySelector('button');
 
   function logText(e) {
-    console.log(this.classList.value);
+    console.log('this', this.classList.value);
+    console.log('target', e.target.classList.value);
+    console.log('currenttarget', e.currentTarget.classList.value);
     // e.stopPropagation(); // stop bubbling!
     // console.log(this);
   }
